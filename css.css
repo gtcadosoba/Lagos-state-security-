@@ -1,0 +1,180 @@
+:root {
+    --primary-blue: #0a4fdc;
+    --dark-blue: #083a9b;
+    --light-blue: #eaf1ff;
+    --text-dark: #0b1f3a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+    background-color: var(--light-blue);
+    color: var(--text-dark);
+}
+
+/* Navbar */
+.navbar {
+    background: white;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+}
+
+.logo span {
+    color: var(--dark-blue);
+}
+
+.nav-text {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(135deg, var(--primary-blue), var(--dark-blue));
+    color: white;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 14px;
+}
+
+.hero p {
+    max-width: 720px;
+    margin: auto;
+    font-size: 1.05rem;
+    opacity: 0.95;
+}
+
+/* Info Section */
+.info {
+    max-width: 1100px;
+    margin: -40px auto 0;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.info-card {
+    background: white;
+    padding: 26px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(10,79,220,0.15);
+}
+
+.info-card h2 {
+    color: var(--primary-blue);
+    margin-bottom: 12px;
+}
+
+/* Directory */
+.directory {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.directory h2 {
+    margin-bottom: 25px;
+    border-left: 6px solid var(--primary-blue);
+    padding-left: 14px;
+}
+
+/* LGA Cards */
+.lga-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.lga-card {
+    background: white;
+    padding: 26px;
+    border-radius: 18px;
+    box-shadow: 0 14px 32px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lga-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(10,79,220,0.25);
+}
+
+.lga-card h3 {
+    color: var(--dark-blue);
+    margin-bottom: 10px;
+}
+
+.lga-card p {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+
+/* Call Button */
+.call-btn {
+    margin-top: 14px;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: var(--primary-blue);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.call-btn:hover {
+    background: var(--dark-blue);
+}
+
+/* Footer */
+.footer {
+    background: var(--dark-blue);
+    color: white;
+    text-align: center;
+    padding: 28px 20px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+.whatsapp-btn {
+    margin-top: 10px;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #25D366;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.whatsapp-btn:hover {
+    background: #1ebe5d;
+}
